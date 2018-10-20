@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yuefu?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: root
+    password: daxiong
+  security:
+    user:
+      name: admin
+      password: admin
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  scan-package: com.jielingtianxia.yuefu.mapper
